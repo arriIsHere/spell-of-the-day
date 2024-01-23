@@ -41,9 +41,9 @@ async function sendSpellMessage(client: WebhookClient, spell: SpellDefinition): 
     });
 }
 
-cron.schedule('00 10 * * *', () => {
+//cron.schedule('00 10 * * *', () => {
     const randomSpell = randomSpellList[Math.floor(Math.random()* randomSpellList.length)];
     sendSpellMessage(client, randomSpell);
-});
+//});
 
 
