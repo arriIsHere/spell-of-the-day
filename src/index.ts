@@ -3,4 +3,4 @@ import keys from './keys';
 
 const client = new WebhookClient({id: keys.webhookId, token: keys.webhookToken});
 
-client.send('Test the link\n https://roll20.net/compendium/dnd5e/Ray%20of%20Frost');
+client.send('Test the link\n http://dnd5e.wikidot.com/spell:cause-fear');

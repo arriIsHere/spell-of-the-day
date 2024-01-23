@@ -1,7 +1,7 @@
 {
   "name": "spell-of-the-day",
   "version": "1.0.0",
-  "description": "Discord bot to give you a random spell from roll20!",
+  "description": "Discord bot to give you a random spell from 5e wiki",
   "main": "index.js",
   "scripts": {
     "start": "ts-node ./src/index.ts",
