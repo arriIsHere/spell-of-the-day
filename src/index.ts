@@ -33,13 +33,13 @@ async function sendSpellMessage(client: WebhookClient, spell: SpellDefinition): 
         {name: 'casting time', value: spell.castingTime},
         {name: 'components', value: spell.components},
     );
+
     client.send({
-        content: `The spell of the day is [${spell.name}](${spell.link})`,
+        content: `The spell of the day is [${spell.name}](${spell.link})!`,
         embeds: [embed]
     });
 }
 
 const randomSpell = randomSpellList[Math.floor(Math.random()* randomSpellList.length)];
-
 sendSpellMessage(client, randomSpell);
 
