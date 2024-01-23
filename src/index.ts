@@ -1,6 +1,7 @@
 import {EmbedBuilder, WebhookClient, inlineCode} from 'discord.js';
 import keys from './keys';
 import spells, { SpellDefinition } from './spells';
+import cron from 'node-cron';
 
 const magicSchoolsImages: Record<string, string> = {
     "Abjuration": "https://blackcitadelrpg.com/wp-content/uploads/2021/09/Abjuration-Sigil.jpg",
@@ -40,6 +41,9 @@ async function sendSpellMessage(client: WebhookClient, spell: SpellDefinition): 
     });
 }
 
-const randomSpell = randomSpellList[Math.floor(Math.random()* randomSpellList.length)];
-sendSpellMessage(client, randomSpell);
+cron.schedule('00 10 * * *', () => {
+    const randomSpell = randomSpellList[Math.floor(Math.random()* randomSpellList.length)];
+    sendSpellMessage(client, randomSpell);
+});
+
 
