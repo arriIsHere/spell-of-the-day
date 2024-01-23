@@ -1,4 +1,14 @@
-const cantrips = [
+export interface SpellDefinition {
+  name: string;
+  link: string;
+  school: string;
+  castingTime: string;
+  range: string;
+  duration: string;
+  components: string;
+}
+
+const cantrips :SpellDefinition[] = [
     {
       "name": "Acid Splash",
       "link": "http://dnd5e.wikidot.com/spell:acid-splash",
@@ -450,7 +460,7 @@ const cantrips = [
       "components": "V, M"
     },
 ];
-const levelOne = [
+const levelOne : SpellDefinition[] = [
     {
       "name": "Absorb Elements",
       "link": "http://dnd5e.wikidot.com/spell:absorb-elements",
@@ -1271,7 +1281,7 @@ const levelOne = [
       "components": "V"
     },
 ];
-const levelTwo = [
+const levelTwo: SpellDefinition[] = [
     {
       "name": "Aganazzar's Scorcher",
       "link": "http://dnd5e.wikidot.com/spell:aganazzars-scorcher",
@@ -2147,7 +2157,7 @@ const levelTwo = [
     },
 
 ];
-const levelThree = [
+const levelThree : SpellDefinition[] = [
     {
       "name": "Animate Dead",
       "link": "http://dnd5e.wikidot.com/spell:animate-dead",
@@ -2905,7 +2915,7 @@ const levelThree = [
       "components": "V, S, M"
     },
 ];
-const levelFour = [
+const levelFour : SpellDefinition[] = [
     {
       "name": "Arcane Eye",
       "link": "http://dnd5e.wikidot.com/spell:arcane-eye",
@@ -3474,7 +3484,7 @@ const levelFour = [
       "components": "V, S, M"
     },
 ];
-const levelFive = [
+const levelFive : SpellDefinition[] = [
     {
       "name": "Animate Objects",
       "link": "http://dnd5e.wikidot.com/spell:animate-objects",
@@ -4079,7 +4089,7 @@ const levelFive = [
       "components": "V, S"
     },
 ];
-const levelSix = [
+const levelSix : SpellDefinition[] = [
     {
       "name": "Arcane Gate",
       "link": "http://dnd5e.wikidot.com/spell:arcane-gate",
@@ -4549,7 +4559,7 @@ const levelSix = [
       "components": "V"
     },
 ];
-const levelSeven = [
+const levelSeven : SpellDefinition[] = [
     {
       "name": "Conjure Celestial",
       "link": "http://dnd5e.wikidot.com/spell:conjure-celestial",
@@ -4821,7 +4831,7 @@ const levelSeven = [
       "components": "V, M"
     },
 ];
-const levelEight = [
+const levelEight : SpellDefinition[] = [
     {
       "name": "Abi-Dalzim's Horrid Wilting",
       "link": "http://dnd5e.wikidot.com/spell:abi-dalzims-horrid-wilting",
@@ -5039,7 +5049,7 @@ const levelEight = [
       "components": "V, S"
     },
 ];
-const levelNine = [
+const levelNine : SpellDefinition[] = [
     {
       "name": "Astral Projection",
       "link": "http://dnd5e.wikidot.com/spell:astral-projection",
@@ -5247,6 +5257,8 @@ const spells = [
     levelThree,
     levelFour,
     levelFive,
+    levelSix,
+    levelSeven,
     levelEight,
     levelNine
 ];
