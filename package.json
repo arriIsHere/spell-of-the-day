@@ -4,7 +4,8 @@
   "description": "Discord bot to give you a random spell from roll20!",
   "main": "index.js",
   "scripts": {
-    "start": "node ./index.js"
+    "start": "ts-node ./src/index.ts",
+    "dev": "ts-node -r dotenv/config ./src/index.ts"
   },
   "keywords": [
     "Discord",
@@ -19,8 +20,8 @@
     "ts-node": "^10.9.2"
   },
   "devDependencies": {
-    "dotenv": "^16.3.2",
     "@types/node": "^20.11.5",
+    "dotenv": "^16.3.2",
     "typescript": "^5.3.3"
   }
 }
