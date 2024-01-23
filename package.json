@@ -1,0 +1,25 @@
+{
+  "name": "spell-of-the-day",
+  "version": "1.0.0",
+  "description": "Discord bot to give you a random spell from roll20!",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "keywords": [
+    "Discord",
+    "bot",
+    "dungeons and dragons",
+    "D&D"
+  ],
+  "author": "Arri Blais <arriblais@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "typescript": "^5.3.3"
+  }
+}
