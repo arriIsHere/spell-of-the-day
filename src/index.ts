@@ -1,2 +1,6 @@
-console.log(`token is: ${process.env.DISCORD_WEBHOOK_TOKEN}`);
-console.log(`id is: ${process.env.DISCORD_WEBHOOK_ID}`);
+import {WebhookClient} from 'discord.js';
+import keys from './keys';
+
+const client = new WebhookClient({id: keys.webhookId, token: keys.webhookToken});
+
+client.send('Test the messages');
