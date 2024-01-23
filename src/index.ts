@@ -44,6 +44,6 @@ async function sendSpellMessage(client: WebhookClient, spell: SpellDefinition): 
 cron.schedule('30 17 * * *', () => {
     const randomSpell = randomSpellList[Math.floor(Math.random()* randomSpellList.length)];
     sendSpellMessage(client, randomSpell);
-});
+}, {timezone: 'America/New_York'});
 
 
