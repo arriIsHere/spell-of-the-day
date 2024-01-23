@@ -4,7 +4,7 @@
   "description": "Discord bot to give you a random spell from 5e wiki",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./src/index.ts",
+    "start": "ts-node --transpileOnly ./src/index.ts",
     "dev": "ts-node -r dotenv/config ./src/index.ts"
   },
   "keywords": [
