@@ -16,7 +16,7 @@ const magicSchoolsImages: Record<string, string> = {
 
 const maxLevel = 3;
 
-spells.splice(-maxLevel);
+spells.splice(maxLevel);
 
 const randomSpellList = spells.flat();
 
